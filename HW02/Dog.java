@@ -12,7 +12,7 @@ public class Dog implements HomeAnimal {
         private String woolColor;
         private String birthDate;
     
-        public void dog(double height, double weight, String eyeColor, String name,
+        public Dog(double height, double weight, String eyeColor, String name,
                 String breed, boolean isVaccinated, Boolean isTraining,
                 String woolColor, String birthDate) {
             this.height = height;
