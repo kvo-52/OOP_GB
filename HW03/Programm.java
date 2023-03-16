@@ -1,17 +1,16 @@
 package HW03;
 
-
 import HW03.Exceptions.IncorrectTriangleExceptions;
 import HW03.Exceptions.NegativeValueException;
 import HW03.Figures.*;
 import HW03.FiguresArray.FigureArray;
 
-public class Program {
+public class Programm {
     public static void main(String[] args)
-    throws NegativeValueException, IncorrectTriangleExceptions, NumberFormatException {
+        throws NegativeValueException, IncorrectTriangleExceptions, NumberFormatException {
 
 
-FigureArray<Figure> storage = new FigureArray<>();
+FigureArray<Figure> listFugers = new FigureArray<>();
 
 
 Figure square = new Square(5);
@@ -21,23 +20,23 @@ Figure circle = new Circle(7);
 Figure sq = new Square();
 
 
-storage.add(square);
-storage.add(rectangle);
-storage.add(triangle);
-storage.add(circle);
-storage.add(sq);
+listFugers.add(square);
+listFugers.add(rectangle);
+listFugers.add(triangle);
+listFugers.add(circle);
+listFugers.add(sq);
 
 
-storage.delete(4);
+listFugers.delete(4);
 
 
-storage.sort();
+listFugers.sort();
 
 // Показать все фигуры и их параметры(длины)
-storage.showFigures();
+listFugers.showFigures();
 
 // Показать всю информацию о фигурах, включая площадь, периметр/длину
-storage.showAll();
+listFugers.showAll();
 
 }
 }
