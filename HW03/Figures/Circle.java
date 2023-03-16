@@ -1,6 +1,6 @@
 package HW03.Figures;
 
-public class Circle implements Figure, Lengthable{
+public class Circle extends Figure implements  Lengthable{
     private int radius;
     public Circle(int radius){
         this.radius  = radius;

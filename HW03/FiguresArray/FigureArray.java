@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import HW03.Figures.*;
 
 
-public class FigureArray<T extends Figure> {
+
+public class FigureArray <T extends Figure> {
     private List<T> storage = new ArrayList<T>();
 
     public void add(T obj) {
@@ -32,8 +34,8 @@ public class FigureArray<T extends Figure> {
             if (figure instanceof Lengthable) {
                 System.out.printf("Длина окружности: %.2f\n", ((Lengthable) figure).length());
             }
-            if (figure instanceof Perimetrable) {
-                System.out.printf("Периметр: %.2f\n", ((Perimetrable) figure).perimeter());
+            if (figure instanceof Perimeterable) {
+                System.out.printf("Периметр: %.2f\n", ((Perimeterable) figure).perimeter());
             }
             System.out.println("------");
         }

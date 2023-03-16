@@ -1,16 +1,17 @@
 package HW03.Figures;
     
-import HW3.Exceptions.IncorrectTriangleException;
-import HW3.Exceptions.NegativeValueException;
+import HW03.Exceptions.*;
 
-public abstract class Polygonal extends Figure implements Perimetrable {
+
+
+public abstract class Polygon extends Figure implements Perimeterable {
     protected int[] sides;
 
-    protected Polygonal(int[] sides) throws NegativeValueException, IncorrectTriangleException {
+    protected Polygon(int[] sides) throws NegativeValueException, IncorrectTriangleExceptions {
         if (hasNegative(sides))
             throw new NegativeValueException("Value must be more than zero");
         if (sides.length == 3 && !isTriangle(sides))
-            throw new IncorrectTriangleException("Triangle is incorrect");
+            throw new IncorrectTriangleExceptions("Triangle is incorrect");
         this.sides = sides;
     }
 
