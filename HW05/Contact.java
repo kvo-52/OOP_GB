@@ -1,6 +1,7 @@
-package HomeWork.HW05;
+package HW05;
 
 public class Contact {
+    private String idContact;
     private String firstName;
     private String lastName;
     private String phone;
@@ -47,11 +48,18 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Контакт{" +
-                "Имя='" + firstName + '\'' +
-                ", Фамилия='" + lastName + '\'' +
-                ", Телефон='" + phone + '\'' +
-                ", email='" + email + '\'' +
+        return idContact + "_Контакт{" +
+                "Имя:'" + firstName + '\'' +
+                ", Фамилия:'" + lastName + '\'' +
+                ", Телефон:'" + phone + '\'' +
                 '}';
+    }
+
+    public String getIdContact() {
+        return idContact;
+    }
+
+    public void setIdContact(String idContact) {
+        this.idContact = idContact;
     }
 }
