@@ -1,13 +1,13 @@
-package HomeWork.HW06.Views;
+package HW06.Views;
 
 
 import java.util.Scanner;
 
-import HomeWork.HW06.Models.*; 
-import HomeWork.HW06.Files.*;
-import HomeWork.HW06.Views.*;
+import HW06.Models.*; 
+// import HomeWork.HW06.Files.*;
+// import HomeWork.HW06.Views.*;
 
-public class ConsoleView implements View {
+public class ConsoleView implements BaseView {
 
     private PhoneBook phoneBook;
     private Scanner scanner;

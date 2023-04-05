@@ -1,10 +1,10 @@
-package HomeWork.HW06.Files.Exporters;
+package HW06.Files.Exporters;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.List;
-import Files.Base.ContactsFileExporter;
-import Models.Contact;
+import HW06.Files.Base.ContactsFileExporter;
+import HW06.Models.Contact;
 
 public class CsvFileExporter implements ContactsFileExporter {
 

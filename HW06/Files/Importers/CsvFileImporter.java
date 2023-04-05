@@ -1,4 +1,4 @@
-package HomeWork.HW06.Files.Importers;
+package HW06.Files.Importers;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
-import HomeWork.HW06.Files.Base.ContactsFileExporter;
-import Models.Contact;
 
-public class CsvFileImport implements ContactsFileExporter {
+import HW06.Files.Base.ContactsFileExporter;
+import HW06.Models.Contact;
 
-    @Override
-    public Collection<Contact> importContacts(String fileName) throws FileNotFoundException {
+public class CsvFileImporter implements ContactsFileExporter {
+
+    // @Override
+    public Collection<Contact> imporContacts (String fileName) throws FileNotFoundException {
         List<Contact> contacts = new ArrayList<>();
 
         try (Scanner scanner = new Scanner(new File(fileName))) {
@@ -28,6 +29,12 @@ public class CsvFileImport implements ContactsFileExporter {
         }
 
         return contacts;
+    }
+
+    @Override
+    public void exportContacts(List<Contact> contacts, String fileName) throws FileNotFoundException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'exportContacts'");
     }
 
 }

@@ -1,6 +1,6 @@
-package HomeWork.HW06.Files.Base;
+package HW06.Files.Base;
 
-import Models.Contact;
+import HW06.Models.*;
 import java.io.FileNotFoundException;
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package HomeWork.HW06.Models;
+package HW06.Models;
 
 
 public class Contact {

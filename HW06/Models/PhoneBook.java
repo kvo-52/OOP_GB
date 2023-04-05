@@ -1,4 +1,4 @@
-package HomeWork.HW06.Models;
+package HW06.Models;
 
 import java.util.ArrayList;
 import java.util.List;
